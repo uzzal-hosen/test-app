@@ -7,6 +7,8 @@ const port = 3900;
 app.use((req, res, next) => {
     console.log(`Received ${req.method} request for ${req.url}`);
     console.log('Request Headers:', req.headers);
+    console.log('Request Body:', req.body);
+    console.log('----------------------------------------------');
     next();
 });
 
